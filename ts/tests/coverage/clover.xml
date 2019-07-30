@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1564513231568" clover="3.2.0">
+  <project timestamp="1564513231568" name="All files">
+    <metrics statements="20" coveredstatements="11" conditionals="2" coveredconditionals="0" methods="13" coveredmethods="6" elements="35" coveredelements="17" complexity="0" loc="20" ncloc="20" packages="1" files="1" classes="1"/>
+    <file name="stack.ts" path="/home/trevor/dev/projects/orgs/jsdsl/stack/ts/stack.ts">
+      <metrics statements="20" coveredstatements="11" conditionals="2" coveredconditionals="0" methods="13" coveredmethods="6"/>
+      <line num="7" count="1" type="stmt"/>
+      <line num="8" count="1" type="stmt"/>
+      <line num="17" count="1" type="stmt"/>
+      <line num="23" count="7" type="stmt"/>
+      <line num="25" count="7" type="stmt"/>
+      <line num="26" count="7" type="stmt"/>
+      <line num="32" count="9" type="stmt"/>
+      <line num="38" count="8" type="stmt"/>
+      <line num="44" count="5" type="stmt"/>
+      <line num="50" count="4" type="stmt"/>
+      <line num="56" count="0" type="stmt"/>
+      <line num="62" count="0" type="stmt"/>
+      <line num="68" count="0" type="stmt"/>
+      <line num="74" count="0" type="stmt"/>
+      <line num="80" count="0" type="stmt"/>
+      <line num="88" count="0" type="stmt"/>
+      <line num="90" count="0" type="stmt"/>
+      <line num="92" count="0" type="cond" truecount="0" falsecount="2"/>
+      <line num="100" count="0" type="stmt"/>
+      <line num="106" count="1" type="stmt"/>
+    </file>
+  </project>
+</coverage>
