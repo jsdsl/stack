@@ -1,7 +1,10 @@
 {
-	"name": "<name>",
+	"name": "@jsdsl/stack",
 	"version": "0.1.0",
-	"description": "<desc>",
+	"description": "A stack (LIFO) implementation written in JavaScript/TypeScript.",
+	"publishConfig": {
+		"access": "public"
+	},
 	"main": "js/main",
 	"types": ".d.ts/main",
 	"scripts": {
@@ -10,15 +13,19 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/<github_org>/<base_name>.git"
+		"url": "git+https://github.com/jsdsl/stack.git"
 	},
-	"keywords": [],
+	"keywords": [
+		"adt",
+		"data-structure",
+		"stack"
+	],
 	"author": "Trevor Sears <trevorsears.main@gmail.com> (http://trevorsears.io/)",
 	"license": "GPL-3.0-or-later",
 	"bugs": {
-		"url": "https://github.com/<github_org>/<base_name>/issues"
+		"url": "https://github.com/jsdsl/stack/issues"
 	},
-	"homepage": "https://github.com/<github_org>/<base_name>#readme",
+	"homepage": "https://github.com/jsdsl/stack#readme",
 	"devDependencies": {
 		"typescript": "latest",
 		"@types/jest": "latest",
@@ -28,5 +35,9 @@
 		"gulp-typescript": "latest",
 		"gulp-uglify-es": "latest",
 		"jest": "latest"
+	},
+	"dependencies": {
+		"@jsdsl/abstract-list": "^0.3.0",
+		"iter-over": "^1.4.0"
 	}
 }
