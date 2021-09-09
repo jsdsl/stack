@@ -1,7 +1,7 @@
 {
 	"name": "@jsdsl/stack",
-	"version": "0.1.0",
-	"description": "A stack (LIFO) implementation written in JavaScript/TypeScript.",
+	"version": "0.2.0",
+	"description": "A stack (LIFO) implementation written in TypeScript.",
 	"publishConfig": {
 		"access": "public"
 	},
@@ -16,28 +16,32 @@
 		"url": "git+https://github.com/jsdsl/stack.git"
 	},
 	"keywords": [
-		"adt",
+		"stack",
+		"lifo",
+		"last-in-first-out",
 		"data-structure",
-		"stack"
+		"adt",
+		"typescript"
 	],
-	"author": "Trevor Sears <trevorsears.main@gmail.com> (http://trevorsears.io/)",
+	"author": "Trevor Sears <trevor@trevorsears.com> (https://trevorsears.com/)",
 	"license": "GPL-3.0-or-later",
 	"bugs": {
 		"url": "https://github.com/jsdsl/stack/issues"
 	},
 	"homepage": "https://github.com/jsdsl/stack#readme",
+	"dependencies": {
+		"@jsdsl/iterator": "^1.0.1"
+	},
 	"devDependencies": {
 		"typescript": "latest",
+		"tslint": "latest",
 		"@types/jest": "latest",
 		"del": "latest",
 		"gulp": "latest",
 		"gulp-sourcemaps": "latest",
 		"gulp-typescript": "latest",
 		"gulp-uglify-es": "latest",
-		"jest": "latest"
-	},
-	"dependencies": {
-		"@jsdsl/abstract-list": "^0.3.0",
-		"iter-over": "^1.4.0"
+		"jest": "latest",
+		"ts-jest": "latest"
 	}
 }
