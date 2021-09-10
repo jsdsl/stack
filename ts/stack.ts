@@ -20,16 +20,20 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-import JSDSL from "@jsdsl/iterator";
+import {
+	Iterable as JSDSLIterable,
+	Iterator as JSDSLIterator,
+	AbstractIterator as JSDSLAbstractIterator
+} from "@jsdsl/iterator";
 
 /**
- * A stack (LIFO) implementation written in JavaScript/TypeScript.
- *
- * @author Trevor Sears <trevorsears.main@gmail.com>
- * @version v0.2.0
+ * A stack (LIFO) implementation written in TypeScript.
+ * 
+ * @author Trevor Sears <trevor@trevorsears.com> (https://trevorsears.com/)
+ * @version v1.0.0
  * @since v0.1.0
  */
-export class Stack<E> implements JSDSL.Iterable<E> {
+export class Stack<E> implements JSDSLIterable<E> {
 	
 	/**
 	 * The internal raw array used to maintain this stack data structure.
@@ -44,18 +48,28 @@ export class Stack<E> implements JSDSL.Iterable<E> {
 	 */
 	public constructor(...elements: E[]) {
 		
-		this.internalStack = [];
+		this.internalStack = elements;
 		
 	}
 	
 	/**
 	 * Pushes the specified element onto the top of this stack.
 	 * 
-	 * @param {E} element The element to push onto this stack.
+	 * Elements are pushed onto the stack in the order they are provided. This entails the following:
+	 * 
+	 * <pre>
+	 *     let stack: Stack<number> = new Stack();
+	 *     stack.push(1, 3, 5);
+	 *     stack.pop(); //=> 5
+	 *     stack.pop(); //=> 3
+	 *     stack.pop(); //=> 1
+	 * </pre>
+	 * 
+	 * @param {E[]} elements A list of elements to push onto this stack.
 	 */
-	public push(element: E): void {
+	public push(...elements: E[]): void {
 		
-		this.internalStack.push(element);
+		this.internalStack.push(...elements);
 		
 	}
 	
@@ -106,9 +120,9 @@ export class Stack<E> implements JSDSL.Iterable<E> {
 	 *
 	 * @returns {IIterator<E>} An iterator over the elements of this stack, in LIFO (last in, first out) order.
 	 */
-	public iterator(): JSDSL.Iterator<E> {
+	public iterator(): JSDSLIterator<E> {
 		
-		return new class extends JSDSL.AbstractIterator<E> {
+		return new class extends JSDSLAbstractIterator<E> {
 			
 			protected elements: E[];
 			

@@ -1,6 +1,6 @@
 {
 	"name": "@jsdsl/stack",
-	"version": "0.2.0",
+	"version": "1.0.0",
 	"description": "A stack (LIFO) implementation written in TypeScript.",
 	"publishConfig": {
 		"access": "public"
